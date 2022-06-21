@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -36,7 +37,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   TextEditingController textdata = TextEditingController();
   final imageurl =
-      'https://image.similarpng.com/very-thumbnail/2020/08/Hand-Holding-mobile-Premium-vector-PNG.png';
+      'https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2020/01/20133422/software-developer-coding-500x333.jpg';
 
   @override
   Widget build(BuildContext context) {
@@ -65,25 +66,25 @@ class _MyHomePageState extends State<MyHomePage> {
                   }
                 },
               ),
-              // const SizedBox(height: 25),
-              // const Text('Share Image from internet'),
-              // const SizedBox(height: 15),
-              // Image.network(imageurl),
-              // ElevatedButton(
-              //   child: const Text('Share Image'),
-              //   onPressed: () async {
-              //     final uri = Uri.parse(imageurl);
-              //     final response = await http.get(uri);
-              //     final bytes = response.bodyBytes;
-              //
-              //     final temp = await getTemporaryDirectory();
-              //     final path = '${temp.path}/image.jpg';
-              //
-              //     File(path).writeAsBytesSync(bytes);
-              //
-              //     await Share.shareFiles([path], text: 'Image Shared');
-              //   },
-              // ),
+              const SizedBox(height: 25),
+              const Text('Share Image from internet'),
+              const SizedBox(height: 15),
+              Image.network(imageurl),
+              ElevatedButton(
+                child: const Text('Share Image'),
+                onPressed: () async {
+                  final uri = Uri.parse(imageurl);
+                  final response = await http.get(uri);
+                  final bytes = response.bodyBytes;
+
+                  final temp = await getTemporaryDirectory();
+                  final path = '${temp.path}/image.jpg';
+
+                  File(path).writeAsBytesSync(bytes);
+
+                  await Share.shareFiles([path], text: 'Image Shared');
+                },
+              ),
               const Text('Share Image from Galary'),
               const SizedBox(height: 15),
               ElevatedButton(

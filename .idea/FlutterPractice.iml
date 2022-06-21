@@ -15,6 +15,9 @@
       <excludeFolder url="file://$MODULE_DIR$/dicee/build" />
       <excludeFolder url="file://$MODULE_DIR$/dicee/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/dicee/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/xylophone/build" />
+      <excludeFolder url="file://$MODULE_DIR$/xylophone/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/xylophone/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
