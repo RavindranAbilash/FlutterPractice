@@ -9,6 +9,12 @@
       <excludeFolder url="file://$MODULE_DIR$/mi_card/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/mi_card/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/mi_card/build" />
+      <excludeFolder url="file://$MODULE_DIR$/share_text_image_file_master/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/share_text_image_file_master/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/share_text_image_file_master/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dicee/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dicee/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/dicee/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
